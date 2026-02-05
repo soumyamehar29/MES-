@@ -1,0 +1,15 @@
+CLR A
+
+MOV A, #0FFH
+ANL A, #18H
+MOV R0, A
+
+CLR A
+MOV A, #0F0H
+ORL A, #1EH
+ANL A, #1EH
+MOV R1, A
+
+MOV A, R1
+
+END
